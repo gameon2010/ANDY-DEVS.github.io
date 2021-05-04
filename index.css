@@ -1,0 +1,152 @@
+*{
+
+margin: 0;
+padding: 0;
+}
+body{
+background-color: blue;
+overflow: hidden;
+
+
+}
+
+
+
+
+
+
+.gamecontainer{
+background-image: url(newgamebg.jpg);
+height: 100vh;
+width: 100%;
+background-repeat: no-repeat;
+background-size: 100vw 100vh;
+
+}
+#scoreCont{
+position: relative;
+right: -1200px;
+top: -50px;
+border: 2px solid black;
+padding: 10px;
+width: 112px;
+font-family: sans-serif;
+
+
+}
+
+.xman{
+background-image: url(xman.png);
+background-size: cover;
+background-repeat: no-repeat;
+height: 100px;
+width: 100px;
+position: absolute;
+
+bottom: 0;
+left: 60px;
+
+}
+.obsatacle{
+background-image: url(zombie.png);
+position: absolute;
+height: 100px;
+width: 70px;
+background-repeat: no-repeat;
+background-size: cover;
+bottom: 0%;
+left: 800px;
+
+}
+.GameOver{
+    visibility: hidden;
+    position: relative;
+    top: 64px;
+font-size: 56px;
+text-align: center;
+font-family: 'Goblin One', cursive;
+
+
+
+
+}
+
+
+.animatexman{
+    animation: xman 0.6s linear;
+
+
+
+
+
+
+}
+.obsatacleAni{
+
+animation: obsatacleAni 5s linear infinite;
+
+
+
+
+
+
+
+}
+
+
+
+
+@keyframes xman{
+    0%{
+        bottom: 0;
+
+
+
+    }
+
+50%{
+bottom: 422px;
+
+
+}
+
+100%{
+
+bottom: 0%;
+
+}
+
+
+
+
+
+
+}
+@keyframes obsatacleAni{
+0%{
+
+left:100vw;
+
+
+}
+
+100%{
+
+left: -10vw;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
